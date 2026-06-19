@@ -1,0 +1,59 @@
+*{
+    margin: 0; /*remove espaços externos padrão do navegador (tipo h2 já vem com argem, ai zera*/
+    padding: 0; /*remove espaçamento interno padrão*/
+    box-sizing: border-box; /*o tamanho do elemento vai levar em consideração a partir da borda, desconsidera a margem como tamanho do elemento, o tamanho vai só até a borda (faz com que o tamanho do elemento inclua padding e border) */
+}
+
+body{
+    font-family: "Segoe UI";
+    line-height: 1.6; /*espaçamento entre as linhas do texto*/
+    color: #333; /*cor padrão do texto*/
+}
+
+.container{
+    max-width: 1200px; /*define o limite até onde o conteúdo vai crescer*/
+    margin: 0 auto; /*1º digito: margem vertical, auto: centraliza */
+    padding: 0 20px; /*adiciona espaço interno nas laterais e evita que o texto encoste na borda da tela*/
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header{
+    background-color: #000000;
+    color: white;
+    padding: 1rem 0; /*espaçamento interno vertical (cima/baixo)*/
+    position: sticky; /*faz o header “grudar” quando a tela rola*/
+    top: 0; /*coordenada do sticky (faz o header grudar no topo da tela)*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /*ultimo num é o desfoque da sombra*/
+    z-index: 100; /*faz com que o header fique por cima de todos os elementos pra quando a tela rolar ele não desaparecer*/
+}
+
+.logo img{
+    width: 250px;
+    height: 90px;
+}
+
+.Person img{
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.cardsP{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /*faz o item não ficar sobrando pros lados da página*/
+}
+
+.Person{
+    border: solid #000000;
+    border-radius: 13px;
+    background-color: burlywood;
+    padding: 8px;
+}
+
